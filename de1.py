@@ -14,8 +14,8 @@ def c1(x):
 
 #Cách 2 code sạch nhanh gọn cần import thư viện nha
 def c2(x):
-  S = sum(math.sqrt(i) for i in range(3, x + 1, 2))
-  return S
+  return sum(math.sqrt(i) for i in range(3, x + 1, 2))
+  
 
 
 #----Test tốc độ ------
