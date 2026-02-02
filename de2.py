@@ -14,8 +14,8 @@ def c1(x):
 
 #Cách 2 code sạch nhanh gọn cần import thư viện nha
 def c2(x):
-  S = sum(1/(math.sqrt(i)) for i in range(2, x + 1, 2))# generator : (<biểu_thức> for <biến> in <iterable> if <điều_kiện>) 
-  return S
+  return sum(1/(math.sqrt(i)) for i in range(2, x + 1, 2))# generator : (<biểu_thức> for <biến> in <iterable> if <điều_kiện>) 
+ 
 
 
 #----Test tốc độ ------
