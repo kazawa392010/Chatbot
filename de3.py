@@ -10,7 +10,7 @@ def c1(x):
   return S
 
 
-#Cách 2 code sạch nhanh gọn 
+#Cách 2 code  gọn (chạy chậm hơn c1)
 def c2(x):
   S = sum(i / (i - 1) for i in range(2, x + 1))
   return S
