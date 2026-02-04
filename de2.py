@@ -3,7 +3,7 @@ import time
 
 
 #Cách 1 code sạch - gọn - dễ đọc
-
+# số lớn thì này nhanh hơn 
 def c1(x):
   S = 0
   for i in range(2, x + 1, 2):
@@ -13,8 +13,10 @@ def c1(x):
 
 
 #Cách 2 code sạch nhanh gọn cần import thư viện nha
+# số nhỏ thì này lại nhanh hơn kia 
 def c2(x):
-  return sum(1/(math.sqrt(i)) for i in range(2, x + 1, 2))# generator : (<biểu_thức> for <biến> in <iterable> if <điều_kiện>) 
+  can = math.sqrt
+  return sum(map(lambda a: can(a), range(2, x + 1, 2)))
  
 
 
