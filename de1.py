@@ -1,4 +1,3 @@
-
 import math
 import time
 
@@ -13,7 +12,7 @@ def c1(x):
 
 #Cách 2 code sạch nhanh gọn cần import thư viện nha
 def c2(x):
-  return sum(math.sqrt(i) for i in range(3, x + 1, 2))
+  return sum(map(math.sqrt, range(3, x + 1, 2)))
   
 
 
