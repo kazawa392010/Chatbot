@@ -1,0 +1,14 @@
+def caesar(text, shift):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    shifted_alphabet = alphabet[shift:] + alphabet[:shift]
+    translation_table = str.maketrans(alphabet, shifted_alphabet)
+    encrypted_text = text.translate(translation_table)
+    return encrypted_text
+
+text_user = input("Nhap chu can ma hoa / giai ma hoa  zo day: ")
+mk = int(input("Nhap mk zo day :"))
+print(caesar(text_user,mk))
+
+#test:
+#text_user = Nabcu vc haooooooooo
+#mk = -20
